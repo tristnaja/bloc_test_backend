@@ -23,7 +23,7 @@ func loadEnv(fileName string) error {
 			continue
 		}
 
-		parts := strings.SplitN(line, ":", 2)
+		parts := strings.SplitN(line, "=", 2)
 
 		if len(parts) != 2 {
 			continue
